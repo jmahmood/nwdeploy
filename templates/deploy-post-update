@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo
+echo "**** pushing changes to Web [Deploy's post-commit hook]"
+echo "**** Using the Master branch."
+echo
+
+cd /home/<%= @app_name %>/app
+unset GIT_DIR
+git pull origin master
+exec git-update-server-info
+
