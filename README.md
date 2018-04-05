@@ -13,11 +13,11 @@ A module to install Postgres, and setup a directory structure for your web app u
 Example
 -------
 
-node 'optimusprimal' {
-    include nwdeploy
-    nwdeploy::basic('kuhero')
-    nwdeploy::db('kuhero', 'password123isagoodpassword!')
-}
+	node 'optimusprimal' {
+	    include nwdeploy
+	    nwdeploy::basic('kuhero')
+	    nwdeploy::db('kuhero', 'password123isagoodpassword!')
+	}
 
 Miscellaneous
 =============
